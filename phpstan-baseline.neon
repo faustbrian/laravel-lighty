@@ -1,0 +1,251 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Parameter \\#1 \\$token of method Illuminate\\\\Http\\\\Client\\\\PendingRequest\\:\\:withToken\\(\\) expects string, mixed given\\.$#"
+			count: 1
+			path: src/API/Client.php
+
+		-
+			message: "#^Parameter \\#2 \\.\\.\\.\\$values of function sprintf expects bool\\|float\\|int\\|string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/API/Client.php
+
+		-
+			message: "#^Property BombenProdukt\\\\Lighty\\\\API\\\\Client\\:\\:\\$team is never read, only written\\.$#"
+			count: 1
+			path: src/API/Client.php
+
+		-
+			message: "#^Binary operation \"\\+\" between float\\|int\\<0, max\\> and string results in an error\\.$#"
+			count: 1
+			path: src/Annotation/AbstractAnnotation.php
+
+		-
+			message: "#^Binary operation \"\\+\" between string and 1 results in an error\\.$#"
+			count: 1
+			path: src/Annotation/AbstractAnnotation.php
+
+		-
+			message: "#^Method BombenProdukt\\\\Lighty\\\\Annotation\\\\AbstractAnnotation\\:\\:findByNumber\\(\\) should return BombenProdukt\\\\Lighty\\\\Model\\\\Line but returns BombenProdukt\\\\Lighty\\\\Model\\\\Line\\|null\\.$#"
+			count: 1
+			path: src/Annotation/AbstractAnnotation.php
+
+		-
+			message: "#^Argument of an invalid type mixed supplied for foreach, only iterables are supported\\.$#"
+			count: 1
+			path: src/Command/SynchronizeGrammars.php
+
+		-
+			message: "#^Parameter \\#1 \\$extension of static method BombenProdukt\\\\Lighty\\\\Extension\\\\Extension\\:\\:fromString\\(\\) expects string, mixed given\\.$#"
+			count: 1
+			path: src/Command/SynchronizeGrammars.php
+
+		-
+			message: "#^Argument of an invalid type mixed supplied for foreach, only iterables are supported\\.$#"
+			count: 1
+			path: src/Command/SynchronizeThemes.php
+
+		-
+			message: "#^Parameter \\#1 \\$extension of static method BombenProdukt\\\\Lighty\\\\Extension\\\\Extension\\:\\:fromString\\(\\) expects string, mixed given\\.$#"
+			count: 1
+			path: src/Command/SynchronizeThemes.php
+
+		-
+			message: "#^Method BombenProdukt\\\\Lighty\\\\CommonMark\\\\RemoteRenderer\\:\\:render\\(\\) should return string but returns mixed\\.$#"
+			count: 1
+			path: src/CommonMark/RemoteRenderer.php
+
+		-
+			message: "#^Parameter \\#1 \\$json of function json_decode expects string, string\\|false given\\.$#"
+			count: 1
+			path: src/Extension/CopyGrammars.php
+
+		-
+			message: "#^Parameter \\#2 \\$contents of static method Illuminate\\\\Support\\\\Facades\\\\File\\:\\:put\\(\\) expects string, string\\|false given\\.$#"
+			count: 1
+			path: src/Extension/CopyThemes.php
+
+		-
+			message: "#^Anonymous function should never return but return statement found\\.$#"
+			count: 1
+			path: src/Extension/GrammarFinder.php
+
+		-
+			message: "#^Cannot access offset 'id' on mixed\\.$#"
+			count: 1
+			path: src/Extension/GrammarFinder.php
+
+		-
+			message: "#^Method BombenProdukt\\\\Lighty\\\\Extension\\\\GrammarFinder\\:\\:find\\(\\) should return string but returns mixed\\.$#"
+			count: 1
+			path: src/Extension/GrammarFinder.php
+
+		-
+			message: "#^Method BombenProdukt\\\\Lighty\\\\Extension\\\\ParsePackageJson\\:\\:execute\\(\\) should return array but returns mixed\\.$#"
+			count: 1
+			path: src/Extension/ParsePackageJson.php
+
+		-
+			message: "#^Method BombenProdukt\\\\Lighty\\\\Extension\\\\Path\\:\\:root\\(\\) should return string but returns mixed\\.$#"
+			count: 1
+			path: src/Extension/Path.php
+
+		-
+			message: "#^Parameter \\#2 \\.\\.\\.\\$values of function sprintf expects bool\\|float\\|int\\|string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Extension/Path.php
+
+		-
+			message: "#^Anonymous function should never return but return statement found\\.$#"
+			count: 1
+			path: src/Extension/ThemeFinder.php
+
+		-
+			message: "#^Cannot access offset 'name' on mixed\\.$#"
+			count: 1
+			path: src/Extension/ThemeFinder.php
+
+		-
+			message: "#^Method BombenProdukt\\\\Lighty\\\\Extension\\\\ThemeFinder\\:\\:find\\(\\) should return string but returns mixed\\.$#"
+			count: 1
+			path: src/Extension/ThemeFinder.php
+
+		-
+			message: "#^Method BombenProdukt\\\\Lighty\\\\Model\\\\Document\\:\\:getSanitizedCode\\(\\) should return string but returns string\\|null\\.$#"
+			count: 1
+			path: src/Model/Document.php
+
+		-
+			message: "#^Parameter \\#1 \\$pattern of function preg_replace expects array\\|string, mixed given\\.$#"
+			count: 1
+			path: src/Model/Document.php
+
+		-
+			message: "#^Parameter \\#2 \\$data of function hash expects string, string\\|false given\\.$#"
+			count: 1
+			path: src/Model/Document.php
+
+		-
+			message: "#^Method BombenProdukt\\\\Lighty\\\\Model\\\\Line\\:\\:getModifiedNumber\\(\\) should return int but returns int\\|null\\.$#"
+			count: 1
+			path: src/Model/Line.php
+
+		-
+			message: "#^Method BombenProdukt\\\\Lighty\\\\Model\\\\Line\\:\\:getSanitizedContent\\(\\) should return string but returns string\\|null\\.$#"
+			count: 1
+			path: src/Model/Line.php
+
+		-
+			message: "#^Parameter \\#3 \\$subject of function preg_replace expects array\\|string, string\\|null given\\.$#"
+			count: 1
+			path: src/Model/Line.php
+
+		-
+			message: "#^Property BombenProdukt\\\\Lighty\\\\Model\\\\Line\\:\\:\\$content \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Model/Line.php
+
+		-
+			message: "#^Property BombenProdukt\\\\Lighty\\\\Model\\\\Line\\:\\:\\$modifiers \\(array\\) does not accept array\\|null\\.$#"
+			count: 1
+			path: src/Model/Line.php
+
+		-
+			message: "#^Cannot call method getContent\\(\\) on BombenProdukt\\\\Lighty\\\\Model\\\\Line\\|null\\.$#"
+			count: 1
+			path: src/Parser/DocumentParser.php
+
+		-
+			message: "#^Parameter \\#1 \\$array of static method Illuminate\\\\Support\\\\Arr\\:\\:get\\(\\) expects array\\|ArrayAccess, mixed given\\.$#"
+			count: 9
+			path: src/Parser/DocumentParser.php
+
+		-
+			message: "#^Parameter \\#1 \\$array of static method Illuminate\\\\Support\\\\Arr\\:\\:has\\(\\) expects array\\|ArrayAccess, mixed given\\.$#"
+			count: 2
+			path: src/Parser/DocumentParser.php
+
+		-
+			message: "#^Parameter \\#1 \\$callback of method Illuminate\\\\Support\\\\Collection\\<\\(int\\|string\\),mixed\\>\\:\\:map\\(\\) expects callable\\(mixed, \\(int\\|string\\)\\)\\: object, Closure\\(string\\)\\: object given\\.$#"
+			count: 1
+			path: src/Parser/DocumentParser.php
+
+		-
+			message: "#^Parameter \\#1 \\$haystack of function str_starts_with expects string, string\\|null given\\.$#"
+			count: 1
+			path: src/Parser/DocumentParser.php
+
+		-
+			message: "#^Parameter \\#1 \\$language of method BombenProdukt\\\\Lighty\\\\Model\\\\Document\\:\\:setLanguage\\(\\) expects array\\|string, mixed given\\.$#"
+			count: 2
+			path: src/Parser/DocumentParser.php
+
+		-
+			message: "#^Parameter \\#1 \\$pattern of function preg_match expects string, mixed given\\.$#"
+			count: 1
+			path: src/Parser/DocumentParser.php
+
+		-
+			message: "#^Parameter \\#1 \\$theme of method BombenProdukt\\\\Lighty\\\\Model\\\\Document\\:\\:setTheme\\(\\) expects array\\|string, mixed given\\.$#"
+			count: 2
+			path: src/Parser/DocumentParser.php
+
+		-
+			message: "#^Parameter \\#1 \\$value of function collect expects Illuminate\\\\Contracts\\\\Support\\\\Arrayable\\<\\(int\\|string\\), mixed\\>\\|iterable\\<\\(int\\|string\\), mixed\\>\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Parser/DocumentParser.php
+
+		-
+			message: "#^Parameter \\#2 \\$subject of function preg_match expects string, string\\|null given\\.$#"
+			count: 1
+			path: src/Parser/DocumentParser.php
+
+		-
+			message: "#^Parameter \\#3 \\$subject of function str_replace expects array\\|string, string\\|null given\\.$#"
+			count: 1
+			path: src/Parser/DocumentParser.php
+
+		-
+			message: "#^Unable to resolve the template type TKey in call to function collect$#"
+			count: 1
+			path: src/Parser/DocumentParser.php
+
+		-
+			message: "#^Unable to resolve the template type TValue in call to function collect$#"
+			count: 1
+			path: src/Parser/DocumentParser.php
+
+		-
+			message: "#^Variable \\$annotation in isset\\(\\) always exists and is not nullable\\.$#"
+			count: 1
+			path: src/Parser/DocumentParser.php
+
+		-
+			message: "#^Variable \\$arguments might not be defined\\.$#"
+			count: 1
+			path: src/Parser/DocumentParser.php
+
+		-
+			message: "#^Parameter \\#1 \\$command of method Illuminate\\\\Process\\\\PendingProcess\\:\\:run\\(\\) expects array\\<string\\>\\|string\\|null, array\\<int, string\\|null\\> given\\.$#"
+			count: 1
+			path: src/Shiki/CallShiki.php
+
+		-
+			message: "#^Parameter \\#2 \\$code of class RuntimeException constructor expects int, int\\|null given\\.$#"
+			count: 1
+			path: src/Shiki/CallShiki.php
+
+		-
+			message: "#^Cannot access offset 'id' on mixed\\.$#"
+			count: 1
+			path: src/Shiki/ListLanguages.php
+
+		-
+			message: "#^Parameter \\#2 \\$array of function array_map expects array, mixed given\\.$#"
+			count: 1
+			path: src/Shiki/ListLanguages.php
+
+		-
+			message: "#^Method BombenProdukt\\\\Lighty\\\\Shiki\\\\ListThemes\\:\\:execute\\(\\) should return array but returns mixed\\.$#"
+			count: 1
+			path: src/Shiki/ListThemes.php

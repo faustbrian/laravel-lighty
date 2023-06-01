@@ -1,0 +1,28 @@
+name: Release
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          ref: main
+
+      - name: Setup Node.js 19
+        uses: actions/setup-node@v3
+        with:
+          node-version: latest
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Create Release Pull Request
+        uses: changesets/action@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
