@@ -297,7 +297,7 @@ async function main() {
 	let allLanguages = shiki.BUNDLED_LANGUAGES;
 	allLanguages.push(...customLanguages);
 
-	const language = args[1];
+	let language = args[1];
 	let theme = args[2];
 
 	const languagesToLoad = allLanguages.filter((lang) =>
@@ -342,7 +342,11 @@ async function main() {
 
 	if (typeof language === 'string') {
 		try {
-			await highlighter.loadLanguage(JSON.parse(language));
+			language = JSON.parse(language);
+
+			await highlighter.loadLanguage(language);
+
+			language = language.id;
 		} catch {
 			//
 		}
