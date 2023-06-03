@@ -256,7 +256,7 @@ function Renderer(options) {
 						content = content.replace(/#([a-fA-F0-9]{6}|[a-fA-F0-9]{3})\b/g, function(_, color) {
                             let textColor = parseInt(color, 16) > 0xffffff / 2 ? '#000' : '#fff';
 
-                            return '<span style="background-color: #' + color + '; color: ' + textColor + ';">#' + color + '</span>';
+                            return '<span class="segment-hex-color" style="background-color: #' + color + '; color: ' + textColor + ';">#' + color + '</span>';
                         });
 					}
 
