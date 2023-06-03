@@ -3,15 +3,15 @@
 declare(strict_types=1);
 
 use BombenProdukt\Lighty\Annotation\AddAnnotation;
-use BombenProdukt\Lighty\Annotation\AutolinkAnnotation;
 use BombenProdukt\Lighty\Annotation\CollapseAnnotation;
+use BombenProdukt\Lighty\Annotation\ColorifyAnnotation;
 use BombenProdukt\Lighty\Annotation\DeleteAnnotation;
 use BombenProdukt\Lighty\Annotation\FocusAnnotation;
-use BombenProdukt\Lighty\Annotation\HexColorAnnotation;
 use BombenProdukt\Lighty\Annotation\HighlightAnnotation;
 use BombenProdukt\Lighty\Annotation\HtmlClassAnnotation;
 use BombenProdukt\Lighty\Annotation\HtmlIdAnnotation;
 use BombenProdukt\Lighty\Annotation\LineNumberAnnotation;
+use BombenProdukt\Lighty\Annotation\LinkifyAnnotation;
 
 return [
     /*
@@ -108,15 +108,15 @@ return [
 
     'annotations' => [
         AddAnnotation::class,
-        AutolinkAnnotation::class,
         CollapseAnnotation::class,
+        ColorifyAnnotation::class,
         DeleteAnnotation::class,
         FocusAnnotation::class,
-        HexColorAnnotation::class,
         HighlightAnnotation::class,
         HtmlClassAnnotation::class,
         HtmlIdAnnotation::class,
         LineNumberAnnotation::class,
+        LinkifyAnnotation::class,
     ],
 
     /*

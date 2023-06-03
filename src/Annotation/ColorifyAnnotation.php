@@ -6,17 +6,17 @@ namespace BombenProdukt\Lighty\Annotation;
 
 use BombenProdukt\Lighty\Model\Line;
 
-final class AutolinkAnnotation extends AbstractAnnotation
+final class ColorifyAnnotation extends AbstractAnnotation
 {
     public function shouldAct(string $annotation): bool
     {
-        return $annotation === 'autolink';
+        return $annotation === 'colorify';
     }
 
     public function parse(Line $line, string $annotation, ?string $arguments): void
     {
         foreach ($this->parseRange($line->getOriginalNumber(), $arguments) as $lineNumber) {
-            $this->findByNumber($lineNumber)->addModifier('autolink');
+            $this->findByNumber($lineNumber)->addModifier('colorify');
         }
     }
 }

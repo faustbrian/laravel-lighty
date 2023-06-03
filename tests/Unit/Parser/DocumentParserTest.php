@@ -95,12 +95,18 @@ return [
 CODE);
 })->with(['add', 'collapse', 'delete', 'focus', 'highlight']);
 
-it('should parse autolink annotations', function (): void {
+it('should parse linkify annotations', function (): void {
     assertMatchesDocumentSnapshot(<<<'CODE'
 /**
- * @see https://bit.ly/2UMUsiu. [lighty autolink]
+ * @see https://bit.ly/2UMUsiu. [lighty linkify]
  */
-{$link} = 'https://bit.ly/2UMUsiu' [lighty autolink]
+{$link} = 'https://bit.ly/2UMUsiu' [lighty linkify]
+CODE);
+});
+
+it('should parse colorify annotations', function (): void {
+    assertMatchesDocumentSnapshot(<<<'CODE'
+Hello #ff55ff [lighty colorify]
 CODE);
 });
 
