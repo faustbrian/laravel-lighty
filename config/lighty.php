@@ -7,6 +7,7 @@ use BombenProdukt\Lighty\Annotation\AutolinkAnnotation;
 use BombenProdukt\Lighty\Annotation\CollapseAnnotation;
 use BombenProdukt\Lighty\Annotation\DeleteAnnotation;
 use BombenProdukt\Lighty\Annotation\FocusAnnotation;
+use BombenProdukt\Lighty\Annotation\HexColorAnnotation;
 use BombenProdukt\Lighty\Annotation\HighlightAnnotation;
 use BombenProdukt\Lighty\Annotation\HtmlClassAnnotation;
 use BombenProdukt\Lighty\Annotation\HtmlIdAnnotation;
@@ -111,6 +112,7 @@ return [
         CollapseAnnotation::class,
         DeleteAnnotation::class,
         FocusAnnotation::class,
+        HexColorAnnotation::class,
         HighlightAnnotation::class,
         HtmlClassAnnotation::class,
         HtmlIdAnnotation::class,
