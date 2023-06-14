@@ -1,5 +1,18 @@
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
 <a name="unreleased"></a>
 ## [Unreleased]
+
+
+<a name="1.2.0"></a>
+## [1.2.0] - 2023-06-14
+### Added
+- Render CommonMark code blocks for all themes
 
 
 <a name="1.1.1"></a>
@@ -32,7 +45,8 @@
 <a name="1.0.0"></a>
 ## 1.0.0 - 2023-06-01
 
-[Unreleased]: https://github.com/BombenProdukt/package_slug/compare/1.1.1...HEAD
+[Unreleased]: https://github.com/BombenProdukt/package_slug/compare/1.2.0...HEAD
+[1.2.0]: https://github.com/BombenProdukt/package_slug/compare/1.1.1...1.2.0
 [1.1.1]: https://github.com/BombenProdukt/package_slug/compare/1.1.0...1.1.1
 [1.1.0]: https://github.com/BombenProdukt/package_slug/compare/1.0.3...1.1.0
 [1.0.3]: https://github.com/BombenProdukt/package_slug/compare/1.0.2...1.0.3
