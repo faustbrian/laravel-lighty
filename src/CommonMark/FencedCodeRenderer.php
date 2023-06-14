@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace BombenProdukt\Lighty\CommonMark;
 
+use BombenProdukt\Lighty\Config\Theme;
+use Illuminate\Support\Facades\Config;
 use League\CommonMark\Extension\CommonMark\Node\Block\FencedCode;
 use League\CommonMark\Node\Node;
 use League\CommonMark\Renderer\ChildNodeRendererInterface;
@@ -32,12 +34,23 @@ final class FencedCodeRenderer implements NodeRendererInterface, XmlNodeRenderer
             throw new \RuntimeException('Fenced code block must have an info string');
         }
 
-        return new CodeBlock(
-            $this->renderer->render(
+        $codeBlocks = [];
+
+        /** @var Theme $theme */
+        foreach (Config::get('lighty.theme') as $theme) {
+            $codeBlocks[] = $this->renderer->render(
                 body: \trim(Xml::escape($node->getLiteral())),
                 language: Xml::escape($infoWords[0]),
-            ),
-        );
+                theme: $theme->getName(),
+                options: [
+                    'data' => [
+                        'theme' => $theme->getType(),
+                    ],
+                ],
+            );
+        }
+
+        return new CodeBlock(\implode('', $codeBlocks));
     }
 
     public function getXmlTagName(Node $node): string

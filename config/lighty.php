@@ -12,6 +12,7 @@ use BombenProdukt\Lighty\Annotation\HtmlClassAnnotation;
 use BombenProdukt\Lighty\Annotation\HtmlIdAnnotation;
 use BombenProdukt\Lighty\Annotation\LineNumberAnnotation;
 use BombenProdukt\Lighty\Annotation\LinkifyAnnotation;
+use BombenProdukt\Lighty\Config\Theme;
 
 return [
     /*
@@ -38,7 +39,7 @@ return [
     */
 
     'grammars' => [
-        //
+        'ziglang.vscode-zig',
     ],
 
     /*
@@ -79,7 +80,10 @@ return [
     |
     */
 
-    'theme' => 'nord',
+    'theme' => [
+        Theme::light('github-light'),
+        Theme::dark('github-dark'),
+    ],
 
     /*
     |--------------------------------------------------------------------------

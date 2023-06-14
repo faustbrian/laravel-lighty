@@ -6,5 +6,5 @@ namespace BombenProdukt\Lighty\CommonMark;
 
 interface RendererInterface
 {
-    public function render(string $body, string $language): string;
+    public function render(string $body, string $language, string $theme, array $options = []): string;
 }

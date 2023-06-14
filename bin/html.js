@@ -1,8 +1,9 @@
-import linkifyUrls from 'linkify-urls';
-import shiki from 'shiki';
 import { createRequire } from 'node:module';
 import path from 'node:path';
 import url from 'node:url';
+
+import linkifyUrls from 'linkify-urls';
+import shiki from 'shiki';
 
 const require = createRequire(import.meta.url);
 const __dirname = url.fileURLToPath(new URL('.', import.meta.url));
@@ -44,8 +45,13 @@ function escapeHtml(html) {
 
 function getLanguagePath(language) {
 	const pathToShikiDistDirectory = path.dirname(require.resolve('shiki'));
-	const pathToShikiLanguages = path.resolve(`${pathToShikiDistDirectory}/../languages`);
-	const relativeDirectory = path.relative(pathToShikiLanguages, `${__dirname}/../languages`);
+	const pathToShikiLanguages = path.resolve(
+		`${pathToShikiDistDirectory}/../languages`,
+	);
+	const relativeDirectory = path.relative(
+		pathToShikiLanguages,
+		`${__dirname}/../languages`,
+	);
 
 	return `${relativeDirectory}/${language}.tmLanguage.json`;
 }
@@ -87,10 +93,20 @@ function Renderer(options) {
 
 			let html = '';
 
-			html += `<pre class="lighty">`;
+			let dataAttributes = '';
+
+			if (Object.keys(options.dataAttributes).length > 0) {
+				for (const [key, value] of Object.entries(options.dataAttributes)) {
+					dataAttributes += ` data-${key}="${value}"`;
+				}
+			}
+
+			html += `<pre class="lighty"${dataAttributes}>`;
+
 			if (options.langId) {
 				html += `<div class="language-id">${options.langId}</div>`;
 			}
+
 			html += `<code class="${className}" style="background-color: ${bg}">`;
 
 			lines.forEach((l, index) => {
@@ -114,15 +130,21 @@ function Renderer(options) {
 				}
 
 				if (hasModifier(lineNumber, 'class')) {
-					for (const classLine of options.lines[lineNumber].modifiers.class) {
+					for (
+						const classLine of options.lines[lineNumber].modifiers
+							.class
+					) {
 						lineClass += ` ${classLine}`;
 					}
 				}
 
-				const isSummaryOpen = hasModifier(lineNumber, 'collapse') && !hasModifier(lineNumber - 1, 'collapse');
+				const isSummaryOpen = hasModifier(lineNumber, 'collapse') &&
+					!hasModifier(lineNumber - 1, 'collapse');
 				const isSummaryMiddle = hasModifier(lineNumber - 1, 'collapse') &&
-					hasModifier(lineNumber, 'collapse') && hasModifier(lineNumber + 1, 'collapse');
-				const isSummaryClose = hasModifier(lineNumber, 'collapse') && !hasModifier(lineNumber + 1, 'collapse');
+					hasModifier(lineNumber, 'collapse') &&
+					hasModifier(lineNumber + 1, 'collapse');
+				const isSummaryClose = hasModifier(lineNumber, 'collapse') &&
+					!hasModifier(lineNumber + 1, 'collapse');
 
 				if (isSummaryOpen) {
 					html += `<details>`;
@@ -131,7 +153,10 @@ function Renderer(options) {
 
 				if (hasModifier(lineNumber, 'id')) {
 					let id = '';
-					for (const idLine of options.lines[lineNumber].modifiers.id) {
+					for (
+						const idLine of options.lines[lineNumber].modifiers
+							.id
+					) {
 						id += ` ${idLine}`;
 					}
 
@@ -227,10 +252,14 @@ function Renderer(options) {
 				}
 
 				l.forEach((token) => {
-					const cssDeclarations = [`color: ${token.color || options.fg}`];
+					const cssDeclarations = [
+						`color: ${token.color || options.fg}`,
+					];
 
 					if (token.fontStyle > FontStyle.None) {
-						cssDeclarations.push(FONT_STYLE_TO_CSS[token.fontStyle]);
+						cssDeclarations.push(
+							FONT_STYLE_TO_CSS[token.fontStyle],
+						);
 					}
 
 					if (hasModifier(lineNumber, 'add')) {
@@ -253,14 +282,29 @@ function Renderer(options) {
 					}
 
 					if (hasModifier(lineNumber, 'colorify')) {
-						content = content.replace(/#([a-fA-F0-9]{6}|[a-fA-F0-9]{3})\b/g, function(_, color) {
-                            let textColor = parseInt(color, 16) > 0xffffff / 2 ? '#000' : '#fff';
+						content = content.replace(
+							/#([a-fA-F0-9]{6}|[a-fA-F0-9]{3})\b/g,
+							function (_, color) {
+								let textColor = parseInt(color, 16) > 0xffffff / 2 ? '#000' : '#fff';
 
-                            return '<span class="segment-hex-color" style="background-color: #' + color + '; color: ' + textColor + ';">#' + color + '</span>';
-                        });
+								return (
+									'<span class="segment-hex-color" style="background-color: #' +
+									color +
+									'; color: ' +
+									textColor +
+									';">#' +
+									color +
+									'</span>'
+								);
+							},
+						);
 					}
 
-					html += `<span style="${cssDeclarations.join('; ')}">${content}</span>`;
+					html += `<span style="${
+						cssDeclarations.join(
+							'; ',
+						)
+					}">${content}</span>`;
 				});
 
 				if (isSummaryOpen) {
@@ -290,6 +334,7 @@ function render(highlighter, args, language) {
 	const renderer = Renderer({
 		fg: theme.fg,
 		bg: theme.bg,
+		dataAttributes: options.data || {},
 		lines: options.lines,
 		showLineNumbers: options.showLineNumbers,
 		showDiffIndicators: options.showDiffIndicators,
@@ -308,8 +353,10 @@ async function main() {
 	let language = args[1];
 	let theme = args[2];
 
-	const languagesToLoad = allLanguages.filter((lang) =>
-		lang.id === language || (lang.aliases && lang.aliases.includes(language))
+	const languagesToLoad = allLanguages.filter(
+		(lang) =>
+			lang.id === language ||
+			(lang.aliases && lang.aliases.includes(language)),
 	);
 
 	(function loadEmbeddedLangsRecursively() {
@@ -317,16 +364,20 @@ async function main() {
 			const embeddedLangs = language.embeddedLangs || [];
 			embeddedLangs.forEach(function (languageKey) {
 				if (
-					languagesToLoad.find((lang) =>
-						lang.id === languageKey || (lang.aliases && lang.aliases.includes(languageKey))
+					languagesToLoad.find(
+						(lang) =>
+							lang.id === languageKey ||
+							(lang.aliases && lang.aliases.includes(languageKey)),
 					)
 				) {
 					return;
 				}
 
 				languagesToLoad.push(
-					allLanguages.find((lang) =>
-						lang.id === languageKey || (lang.aliases && lang.aliases.includes(languageKey))
+					allLanguages.find(
+						(lang) =>
+							lang.id === languageKey ||
+							(lang.aliases && lang.aliases.includes(languageKey)),
 					),
 				);
 

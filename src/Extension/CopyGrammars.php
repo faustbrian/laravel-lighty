@@ -10,8 +10,6 @@ final class CopyGrammars
 {
     /**
      * @param Grammar[] $grammars
-     *
-     * @throws \JsonException
      */
     public static function execute(Extension $extension, array $grammars): void
     {
