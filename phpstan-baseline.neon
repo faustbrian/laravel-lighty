@@ -26,6 +26,11 @@ parameters:
 			path: src/Annotation/AbstractAnnotation.php
 
 		-
+			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			count: 2
+			path: src/Annotation/AbstractAnnotation.php
+
+		-
 			message: "#^Method BombenProdukt\\\\Lighty\\\\Annotation\\\\AbstractAnnotation\\:\\:findByNumber\\(\\) should return BombenProdukt\\\\Lighty\\\\Model\\\\Line but returns BombenProdukt\\\\Lighty\\\\Model\\\\Line\\|null\\.$#"
 			count: 1
 			path: src/Annotation/AbstractAnnotation.php
@@ -36,6 +41,11 @@ parameters:
 			path: src/Command/SynchronizeGrammars.php
 
 		-
+			message: "#^PHPDoc type string of property BombenProdukt\\\\Lighty\\\\Command\\\\SynchronizeGrammars\\:\\:\\$description is not the same as PHPDoc type string\\|null of overridden property Illuminate\\\\Console\\\\Command\\:\\:\\$description\\.$#"
+			count: 1
+			path: src/Command/SynchronizeGrammars.php
+
+		-
 			message: "#^Parameter \\#1 \\$extension of static method BombenProdukt\\\\Lighty\\\\Extension\\\\Extension\\:\\:fromString\\(\\) expects string, mixed given\\.$#"
 			count: 1
 			path: src/Command/SynchronizeGrammars.php
@@ -46,12 +56,32 @@ parameters:
 			path: src/Command/SynchronizeThemes.php
 
 		-
+			message: "#^PHPDoc type string of property BombenProdukt\\\\Lighty\\\\Command\\\\SynchronizeThemes\\:\\:\\$description is not the same as PHPDoc type string\\|null of overridden property Illuminate\\\\Console\\\\Command\\:\\:\\$description\\.$#"
+			count: 1
+			path: src/Command/SynchronizeThemes.php
+
+		-
 			message: "#^Parameter \\#1 \\$extension of static method BombenProdukt\\\\Lighty\\\\Extension\\\\Extension\\:\\:fromString\\(\\) expects string, mixed given\\.$#"
 			count: 1
 			path: src/Command/SynchronizeThemes.php
 
 		-
 			message: "#^Argument of an invalid type mixed supplied for foreach, only iterables are supported\\.$#"
+			count: 1
+			path: src/CommonMark/FencedCodeRenderer.php
+
+		-
+			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			count: 1
+			path: src/CommonMark/FencedCodeRenderer.php
+
+		-
+			message: "#^Parameter \\#1 \\$node \\(League\\\\CommonMark\\\\Extension\\\\CommonMark\\\\Node\\\\Block\\\\FencedCode\\) of method BombenProdukt\\\\Lighty\\\\CommonMark\\\\FencedCodeRenderer\\:\\:getXmlAttributes\\(\\) should be contravariant with parameter \\$node \\(League\\\\CommonMark\\\\Node\\\\Node\\) of method League\\\\CommonMark\\\\Xml\\\\XmlNodeRendererInterface\\:\\:getXmlAttributes\\(\\)$#"
+			count: 1
+			path: src/CommonMark/FencedCodeRenderer.php
+
+		-
+			message: "#^Parameter \\#1 \\$node \\(League\\\\CommonMark\\\\Extension\\\\CommonMark\\\\Node\\\\Block\\\\FencedCode\\) of method BombenProdukt\\\\Lighty\\\\CommonMark\\\\FencedCodeRenderer\\:\\:render\\(\\) should be contravariant with parameter \\$node \\(League\\\\CommonMark\\\\Node\\\\Node\\) of method League\\\\CommonMark\\\\Renderer\\\\NodeRendererInterface\\:\\:render\\(\\)$#"
 			count: 1
 			path: src/CommonMark/FencedCodeRenderer.php
 
@@ -171,7 +201,7 @@ parameters:
 			path: src/Parser/DocumentParser.php
 
 		-
-			message: "#^Parameter \\#1 \\$callback of method Illuminate\\\\Support\\\\Collection\\<\\(int\\|string\\),mixed\\>\\:\\:map\\(\\) expects callable\\(mixed, \\(int\\|string\\)\\)\\: object, Closure\\(string\\)\\: object given\\.$#"
+			message: "#^Parameter \\#1 \\$callback of method Illuminate\\\\Support\\\\Collection\\<\\(int\\|string\\),mixed\\>\\:\\:map\\(\\) expects callable\\(mixed, int\\|string\\)\\: object, Closure\\(string\\)\\: object given\\.$#"
 			count: 1
 			path: src/Parser/DocumentParser.php
 
