@@ -1,0 +1,9 @@
+{
+	"private": true,
+	"name": "@faustbrian/laravel-lighty",
+	"type": "module",
+	"dependencies": {
+		"linkify-urls": "^4.0.0",
+		"shiki": "^0.14.2"
+	}
+}
