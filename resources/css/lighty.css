@@ -1,0 +1,133 @@
+.lighty {
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    line-height: 1.5;
+    margin: 0 !important;
+    overflow-x: hidden;
+    padding: 0 !important;
+}
+
+.lighty code:not(pre *) {
+    background-color: transparent;
+    border-width: 0;
+    color: #6b05af;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.lighty code:not(pre *) {
+    --tw-bg-opacity: 1;
+    background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
+    border-radius: 0.125rem;
+    border-width: 1px;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding: 1px 0.25rem;
+}
+
+.lighty code:not(pre *):after,
+.lighty code:not(pre *):before {
+    --tw-text-opacity: 1;
+    color: rgba(156, 163, 175, var(--tw-text-opacity));
+    content: "`";
+}
+
+.lighty code {
+    display: block;
+    min-height: 100%;
+    min-width: -webkit-max-content;
+    min-width: -moz-max-content;
+    min-width: max-content;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.lighty code .line {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0.25rem;
+    padding-top: 0.25rem;
+    display: inline-block;
+    width: 100%;
+}
+
+.lighty code .line-number,
+.lighty code .summary-caret {
+    margin-right: 1rem;
+}
+
+.lighty code .line-highlight {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.lighty code.has-focus-lines .line:not(.line-focus) {
+    transition: filter 0.35s, opacity 0.35s;
+    filter: blur(0.095rem);
+    opacity: 0.65;
+}
+
+.lighty code.has-focus-lines:hover .line:not(.line-focus) {
+    filter: blur(0px);
+    opacity: 1;
+}
+
+.lighty code details > summary {
+    display: inline-block !important;
+}
+
+.lighty code details > summary:focus {
+    outline: none;
+}
+
+.lighty code details > summary::-webkit-details-marker,
+.lighty code details > summary::marker {
+    display: none;
+}
+
+.lighty code .line-number {
+    display: inline-block;
+    width: 24px !important;
+}
+
+.lighty code .summary-caret {
+    display: inline-block;
+    width: 12px !important;
+}
+
+.lighty code .diff-indicator {
+    display: inline-block;
+    width: 24px;
+}
+
+.lighty code .summary-caret:after {
+    pointer-events: none;
+}
+
+.lighty code details[open] .summary-caret-start:after {
+    content: "-";
+}
+
+.lighty code details:not([open]) .summary-caret-start:after {
+    content: "+";
+}
+
+.lighty code details[open] .summary-hide-when-open {
+    display: none;
+}
+
+.lighty code details:not([open]) .summary-hide-when-open {
+    display: inline;
+}
+
+.lighty code .line-add {
+    background-color: #89ddff20;
+    color: #c3e88d;
+}
+
+.lighty code .line-delete {
+    background-color: #ff9cac20;
+    color: #f07178;
+}
