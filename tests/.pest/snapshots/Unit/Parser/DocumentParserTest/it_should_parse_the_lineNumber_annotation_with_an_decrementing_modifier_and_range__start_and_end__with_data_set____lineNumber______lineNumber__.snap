@@ -1,0 +1,67 @@
+{
+    "code": "return [\n    'extensions' => [\n        \/\/ Add attributes straight from markdown.\n        AttributesExtension::class,[lighty add]\n        \/\/ Add Lighty syntax highlighting.\n        SomeOtherHighlighter::class,[lighty delete]\n        LightyExtension::class,[lighty lineNumber(-5):start]\n    ]\n][lighty lineNumber(-5):end]",
+    "codeSanitized": "return [\n    'extensions' => [\n        \/\/ Add attributes straight from markdown.\n        AttributesExtension::class,\n        \/\/ Add Lighty syntax highlighting.\n        SomeOtherHighlighter::class,\n        LightyExtension::class,\n    ]\n]",
+    "lines": {
+        "1": {
+            "originalNumber": 1,
+            "modifiedNumber": 1,
+            "content": "return [",
+            "modifiers": []
+        },
+        "2": {
+            "originalNumber": 2,
+            "modifiedNumber": 2,
+            "content": "    'extensions' => [",
+            "modifiers": []
+        },
+        "3": {
+            "originalNumber": 3,
+            "modifiedNumber": 3,
+            "content": "        \/\/ Add attributes straight from markdown.",
+            "modifiers": []
+        },
+        "4": {
+            "originalNumber": 4,
+            "modifiedNumber": 4,
+            "content": "        AttributesExtension::class,[lighty add]",
+            "modifiers": {
+                "add": "add"
+            }
+        },
+        "5": {
+            "originalNumber": 5,
+            "modifiedNumber": 5,
+            "content": "        \/\/ Add Lighty syntax highlighting.",
+            "modifiers": []
+        },
+        "6": {
+            "originalNumber": 6,
+            "modifiedNumber": 6,
+            "content": "        SomeOtherHighlighter::class,[lighty delete]",
+            "modifiers": {
+                "delete": "delete"
+            }
+        },
+        "7": {
+            "originalNumber": 7,
+            "modifiedNumber": 2,
+            "content": "        LightyExtension::class,[lighty lineNumber(-5):start]",
+            "modifiers": []
+        },
+        "8": {
+            "originalNumber": 8,
+            "modifiedNumber": 3,
+            "content": "    ]",
+            "modifiers": []
+        },
+        "9": {
+            "originalNumber": 9,
+            "modifiedNumber": 4,
+            "content": "][lighty lineNumber(-5):end]",
+            "modifiers": []
+        }
+    },
+    "showDiffIndicators": true,
+    "showDiffIndicatorsInPlaceOfLineNumbers": true,
+    "showLineNumbers": true
+}

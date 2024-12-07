@@ -1,0 +1,37 @@
+{
+    "code": "\/**\n * @see https:\/\/bit.ly\/2UMUsiu. [lighty linkify]\n *\/\n{$link} = 'https:\/\/bit.ly\/2UMUsiu' [lighty linkify]",
+    "codeSanitized": "\/**\n * @see https:\/\/bit.ly\/2UMUsiu. \n *\/\n{$link} = 'https:\/\/bit.ly\/2UMUsiu' ",
+    "lines": {
+        "1": {
+            "originalNumber": 1,
+            "modifiedNumber": 1,
+            "content": "\/**",
+            "modifiers": []
+        },
+        "2": {
+            "originalNumber": 2,
+            "modifiedNumber": 2,
+            "content": " * @see https:\/\/bit.ly\/2UMUsiu. [lighty linkify]",
+            "modifiers": {
+                "linkify": "linkify"
+            }
+        },
+        "3": {
+            "originalNumber": 3,
+            "modifiedNumber": 3,
+            "content": " *\/",
+            "modifiers": []
+        },
+        "4": {
+            "originalNumber": 4,
+            "modifiedNumber": 4,
+            "content": "{$link} = 'https:\/\/bit.ly\/2UMUsiu' [lighty linkify]",
+            "modifiers": {
+                "linkify": "linkify"
+            }
+        }
+    },
+    "showDiffIndicators": true,
+    "showDiffIndicatorsInPlaceOfLineNumbers": true,
+    "showLineNumbers": true
+}

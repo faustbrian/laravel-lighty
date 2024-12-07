@@ -1,0 +1,30 @@
+<?php declare(strict_types=1);
+
+/**
+ * Copyright (C) BaseCode Oy - All Rights Reserved
+ *
+ * For the full copyright and license information, please view
+ * the LICENSE file that was distributed with this source code.
+ */
+
+namespace Tests\Unit\Annotation;
+
+use BaseCodeOy\Lighty\Annotation\HighlightAnnotation;
+use BaseCodeOy\Lighty\Model\Document;
+
+it('should act correctly based on annotation', function (): void {
+    $parser = new HighlightAnnotation(new Document(''));
+
+    expect($parser->shouldAct('highlight'))->toBeTrue();
+    expect($parser->shouldAct('nothighlight'))->toBeFalse();
+});
+
+it('should parse correctly and highlight modifiers', function (): void {
+    $document = new Document('highlight'.\PHP_EOL.'highlight');
+
+    (new HighlightAnnotation($document))->parse($document->getLines()->findByNumber(1), 'highlight', null);
+    (new HighlightAnnotation($document))->parse($document->getLines()->findByNumber(2), 'highlight', null);
+
+    expect($document->getLines()->findByNumber(1)->getModifiers())->toEqual(['highlight' => 'highlight']);
+    expect($document->getLines()->findByNumber(2)->getModifiers())->toEqual(['highlight' => 'highlight']);
+});

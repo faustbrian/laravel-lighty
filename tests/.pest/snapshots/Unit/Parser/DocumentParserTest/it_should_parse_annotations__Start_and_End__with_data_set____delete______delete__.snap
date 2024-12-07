@@ -1,0 +1,119 @@
+{
+    "code": "return [\n    'heading_permalink' => [ [lighty delete:start]\n        'html_class' => 'permalink',\n        'id_prefix' => 'user-content',\n        'insert' => 'before',\n        'title' => 'Permalink',\n        'symbol' => '#',\n    ],[lighty delete:end]\n\n    'extensions' => [\n        \/\/ Add attributes straight from markdown.\n        AttributesExtension::class,\n        \/\/ Add Lighty syntax highlighting.\n        LightyExtension::class,\n    ]\n]",
+    "codeSanitized": "return [\n    'heading_permalink' => [ \n        'html_class' => 'permalink',\n        'id_prefix' => 'user-content',\n        'insert' => 'before',\n        'title' => 'Permalink',\n        'symbol' => '#',\n    ],\n\n    'extensions' => [\n        \/\/ Add attributes straight from markdown.\n        AttributesExtension::class,\n        \/\/ Add Lighty syntax highlighting.\n        LightyExtension::class,\n    ]\n]",
+    "lines": {
+        "1": {
+            "originalNumber": 1,
+            "modifiedNumber": 1,
+            "content": "return [",
+            "modifiers": []
+        },
+        "2": {
+            "originalNumber": 2,
+            "modifiedNumber": 2,
+            "content": "    'heading_permalink' => [ [lighty delete:start]",
+            "modifiers": {
+                "delete": "delete"
+            }
+        },
+        "3": {
+            "originalNumber": 3,
+            "modifiedNumber": 3,
+            "content": "        'html_class' => 'permalink',",
+            "modifiers": {
+                "delete": "delete"
+            }
+        },
+        "4": {
+            "originalNumber": 4,
+            "modifiedNumber": 4,
+            "content": "        'id_prefix' => 'user-content',",
+            "modifiers": {
+                "delete": "delete"
+            }
+        },
+        "5": {
+            "originalNumber": 5,
+            "modifiedNumber": 5,
+            "content": "        'insert' => 'before',",
+            "modifiers": {
+                "delete": "delete"
+            }
+        },
+        "6": {
+            "originalNumber": 6,
+            "modifiedNumber": 6,
+            "content": "        'title' => 'Permalink',",
+            "modifiers": {
+                "delete": "delete"
+            }
+        },
+        "7": {
+            "originalNumber": 7,
+            "modifiedNumber": 7,
+            "content": "        'symbol' => '#',",
+            "modifiers": {
+                "delete": "delete"
+            }
+        },
+        "8": {
+            "originalNumber": 8,
+            "modifiedNumber": 8,
+            "content": "    ],[lighty delete:end]",
+            "modifiers": {
+                "delete": "delete"
+            }
+        },
+        "9": {
+            "originalNumber": 9,
+            "modifiedNumber": 9,
+            "content": "",
+            "modifiers": []
+        },
+        "10": {
+            "originalNumber": 10,
+            "modifiedNumber": 10,
+            "content": "    'extensions' => [",
+            "modifiers": []
+        },
+        "11": {
+            "originalNumber": 11,
+            "modifiedNumber": 11,
+            "content": "        \/\/ Add attributes straight from markdown.",
+            "modifiers": []
+        },
+        "12": {
+            "originalNumber": 12,
+            "modifiedNumber": 12,
+            "content": "        AttributesExtension::class,",
+            "modifiers": []
+        },
+        "13": {
+            "originalNumber": 13,
+            "modifiedNumber": 13,
+            "content": "        \/\/ Add Lighty syntax highlighting.",
+            "modifiers": []
+        },
+        "14": {
+            "originalNumber": 14,
+            "modifiedNumber": 14,
+            "content": "        LightyExtension::class,",
+            "modifiers": []
+        },
+        "15": {
+            "originalNumber": 15,
+            "modifiedNumber": 15,
+            "content": "    ]",
+            "modifiers": []
+        },
+        "16": {
+            "originalNumber": 16,
+            "modifiedNumber": 16,
+            "content": "]",
+            "modifiers": []
+        }
+    },
+    "showDiffIndicators": true,
+    "showDiffIndicatorsInPlaceOfLineNumbers": true,
+    "showLineNumbers": true
+}
