@@ -1,0 +1,26 @@
+{
+    "symbol-whitelist": [
+        "array",
+        "bool",
+        "false",
+        "int",
+        "null",
+        "self",
+        "string",
+        "true",
+        "collect",
+        "Illuminate\\Console\\Command",
+        "Illuminate\\Http\\Client\\PendingRequest",
+        "Illuminate\\Http\\Client\\Response",
+        "Illuminate\\Support\\Arr",
+        "Illuminate\\Support\\Collection",
+        "Illuminate\\Support\\Facades\\Cache",
+        "Illuminate\\Support\\Facades\\Config",
+        "Illuminate\\Support\\Facades\\File",
+        "Illuminate\\Support\\Facades\\Http",
+        "Illuminate\\Support\\Facades\\Process",
+        "Illuminate\\Support\\Str",
+        "Spatie\\LaravelPackageTools\\Package",
+        "Symfony\\Component\\Process\\ExecutableFinder"
+    ]
+}

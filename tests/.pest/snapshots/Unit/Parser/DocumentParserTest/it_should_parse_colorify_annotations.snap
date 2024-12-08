@@ -1,0 +1,17 @@
+{
+    "code": "Hello #ff55ff [lighty colorify]",
+    "codeSanitized": "Hello #ff55ff ",
+    "lines": {
+        "1": {
+            "originalNumber": 1,
+            "modifiedNumber": 1,
+            "content": "Hello #ff55ff [lighty colorify]",
+            "modifiers": {
+                "colorify": "colorify"
+            }
+        }
+    },
+    "showDiffIndicators": true,
+    "showDiffIndicatorsInPlaceOfLineNumbers": true,
+    "showLineNumbers": true
+}

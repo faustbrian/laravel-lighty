@@ -1,0 +1,551 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Cannot call method in\\(\\) on iterable\\<SplFileInfo\\>\\.$#"
+			count: 1
+			path: .php-cs-fixer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Lighty\\\\API\\\\Client\\:\\:get\\(\\) has parameter \\$query with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/API/Client.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Lighty\\\\API\\\\Client\\:\\:patch\\(\\) has parameter \\$body with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/API/Client.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Lighty\\\\API\\\\Client\\:\\:post\\(\\) has parameter \\$body with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/API/Client.php
+
+		-
+			message: "#^Parameter \\#1 \\$token of method Illuminate\\\\Http\\\\Client\\\\PendingRequest\\:\\:withToken\\(\\) expects string, mixed given\\.$#"
+			count: 1
+			path: src/API/Client.php
+
+		-
+			message: "#^Parameter \\#2 \\.\\.\\.\\$values of function sprintf expects bool\\|float\\|int\\|string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/API/Client.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Lighty\\\\API\\\\Documents\\:\\:index\\(\\) has parameter \\$query with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/API/Documents.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Lighty\\\\API\\\\Documents\\:\\:store\\(\\) has parameter \\$body with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/API/Documents.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Lighty\\\\API\\\\Languages\\:\\:index\\(\\) has parameter \\$query with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/API/Languages.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Lighty\\\\API\\\\Languages\\:\\:store\\(\\) has parameter \\$body with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/API/Languages.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Lighty\\\\API\\\\Languages\\:\\:update\\(\\) has parameter \\$body with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/API/Languages.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Lighty\\\\API\\\\Themes\\:\\:index\\(\\) has parameter \\$query with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/API/Themes.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Lighty\\\\API\\\\Themes\\:\\:store\\(\\) has parameter \\$body with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/API/Themes.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Lighty\\\\API\\\\Themes\\:\\:update\\(\\) has parameter \\$body with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/API/Themes.php
+
+		-
+			message: "#^Binary operation \"\\+\" between float\\|int\\<0, max\\> and string results in an error\\.$#"
+			count: 1
+			path: src/Annotation/AbstractAnnotation.php
+
+		-
+			message: "#^Binary operation \"\\+\" between string and 1 results in an error\\.$#"
+			count: 1
+			path: src/Annotation/AbstractAnnotation.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Lighty\\\\Annotation\\\\AbstractAnnotation\\:\\:findByNumber\\(\\) should return BaseCodeOy\\\\Lighty\\\\Model\\\\Line but returns BaseCodeOy\\\\Lighty\\\\Model\\\\Line\\|null\\.$#"
+			count: 1
+			path: src/Annotation/AbstractAnnotation.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Lighty\\\\Annotation\\\\AbstractAnnotation\\:\\:parseRange\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Annotation/AbstractAnnotation.php
+
+		-
+			message: "#^Property BaseCodeOy\\\\Lighty\\\\Annotation\\\\AbstractAnnotation\\:\\:\\$pending type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Annotation/AbstractAnnotation.php
+
+		-
+			message: "#^Argument of an invalid type mixed supplied for foreach, only iterables are supported\\.$#"
+			count: 1
+			path: src/Command/SynchronizeGrammars.php
+
+		-
+			message: "#^PHPDoc type string of property BaseCodeOy\\\\Lighty\\\\Command\\\\SynchronizeGrammars\\:\\:\\$description is not the same as PHPDoc type string\\|null of overridden property Illuminate\\\\Console\\\\Command\\:\\:\\$description\\.$#"
+			count: 1
+			path: src/Command/SynchronizeGrammars.php
+
+		-
+			message: "#^Parameter \\#1 \\$extension of static method BaseCodeOy\\\\Lighty\\\\Extension\\\\Extension\\:\\:fromString\\(\\) expects string, mixed given\\.$#"
+			count: 1
+			path: src/Command/SynchronizeGrammars.php
+
+		-
+			message: "#^Argument of an invalid type mixed supplied for foreach, only iterables are supported\\.$#"
+			count: 1
+			path: src/Command/SynchronizeThemes.php
+
+		-
+			message: "#^PHPDoc type string of property BaseCodeOy\\\\Lighty\\\\Command\\\\SynchronizeThemes\\:\\:\\$description is not the same as PHPDoc type string\\|null of overridden property Illuminate\\\\Console\\\\Command\\:\\:\\$description\\.$#"
+			count: 1
+			path: src/Command/SynchronizeThemes.php
+
+		-
+			message: "#^Parameter \\#1 \\$extension of static method BaseCodeOy\\\\Lighty\\\\Extension\\\\Extension\\:\\:fromString\\(\\) expects string, mixed given\\.$#"
+			count: 1
+			path: src/Command/SynchronizeThemes.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Lighty\\\\CommonMark\\\\CacheRenderer\\:\\:render\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/CommonMark/CacheRenderer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Lighty\\\\CommonMark\\\\CacheRenderer\\:\\:render\\(\\) should return string but returns mixed\\.$#"
+			count: 1
+			path: src/CommonMark/CacheRenderer.php
+
+		-
+			message: "#^Argument of an invalid type mixed supplied for foreach, only iterables are supported\\.$#"
+			count: 1
+			path: src/CommonMark/FencedCodeRenderer.php
+
+		-
+			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			count: 1
+			path: src/CommonMark/FencedCodeRenderer.php
+
+		-
+			message: "#^Parameter \\#1 \\$node \\(League\\\\CommonMark\\\\Extension\\\\CommonMark\\\\Node\\\\Block\\\\FencedCode\\) of method BaseCodeOy\\\\Lighty\\\\CommonMark\\\\FencedCodeRenderer\\:\\:getXmlAttributes\\(\\) should be contravariant with parameter \\$node \\(League\\\\CommonMark\\\\Node\\\\Node\\) of method League\\\\CommonMark\\\\Xml\\\\XmlNodeRendererInterface\\:\\:getXmlAttributes\\(\\)$#"
+			count: 1
+			path: src/CommonMark/FencedCodeRenderer.php
+
+		-
+			message: "#^Parameter \\#1 \\$node \\(League\\\\CommonMark\\\\Extension\\\\CommonMark\\\\Node\\\\Block\\\\FencedCode\\) of method BaseCodeOy\\\\Lighty\\\\CommonMark\\\\FencedCodeRenderer\\:\\:render\\(\\) should be contravariant with parameter \\$node \\(League\\\\CommonMark\\\\Node\\\\Node\\) of method League\\\\CommonMark\\\\Renderer\\\\NodeRendererInterface\\:\\:render\\(\\)$#"
+			count: 1
+			path: src/CommonMark/FencedCodeRenderer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Lighty\\\\CommonMark\\\\LocalRenderer\\:\\:render\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/CommonMark/LocalRenderer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Lighty\\\\CommonMark\\\\RemoteRenderer\\:\\:render\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/CommonMark/RemoteRenderer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Lighty\\\\CommonMark\\\\RemoteRenderer\\:\\:render\\(\\) should return string but returns mixed\\.$#"
+			count: 1
+			path: src/CommonMark/RemoteRenderer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Lighty\\\\CommonMark\\\\RendererInterface\\:\\:render\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/CommonMark/RendererInterface.php
+
+		-
+			message: "#^Parameter \\#1 \\$json of function json_decode expects string, string\\|false given\\.$#"
+			count: 1
+			path: src/Extension/CopyGrammars.php
+
+		-
+			message: "#^Parameter \\#2 \\$contents of static method Illuminate\\\\Support\\\\Facades\\\\File\\:\\:put\\(\\) expects string, string\\|false given\\.$#"
+			count: 1
+			path: src/Extension/CopyThemes.php
+
+		-
+			message: "#^Cannot access offset 'id' on mixed\\.$#"
+			count: 1
+			path: src/Extension/GrammarFinder.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Lighty\\\\Extension\\\\GrammarFinder\\:\\:__construct\\(\\) has parameter \\$items with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Extension/GrammarFinder.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Lighty\\\\Extension\\\\GrammarFinder\\:\\:all\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Extension/GrammarFinder.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Lighty\\\\Extension\\\\GrammarFinder\\:\\:find\\(\\) should return string but returns mixed\\.$#"
+			count: 1
+			path: src/Extension/GrammarFinder.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Lighty\\\\Extension\\\\ParsePackageJson\\:\\:execute\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Extension/ParsePackageJson.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Lighty\\\\Extension\\\\ParsePackageJson\\:\\:execute\\(\\) should return array but returns mixed\\.$#"
+			count: 1
+			path: src/Extension/ParsePackageJson.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Lighty\\\\Extension\\\\Path\\:\\:root\\(\\) should return string but returns mixed\\.$#"
+			count: 1
+			path: src/Extension/Path.php
+
+		-
+			message: "#^Parameter \\#2 \\.\\.\\.\\$values of function sprintf expects bool\\|float\\|int\\|string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Extension/Path.php
+
+		-
+			message: "#^Cannot access offset 'name' on mixed\\.$#"
+			count: 1
+			path: src/Extension/ThemeFinder.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Lighty\\\\Extension\\\\ThemeFinder\\:\\:__construct\\(\\) has parameter \\$items with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Extension/ThemeFinder.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Lighty\\\\Extension\\\\ThemeFinder\\:\\:all\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Extension/ThemeFinder.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Lighty\\\\Extension\\\\ThemeFinder\\:\\:find\\(\\) should return string but returns mixed\\.$#"
+			count: 1
+			path: src/Extension/ThemeFinder.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Lighty\\\\Lighty\\:\\:highlight\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Lighty.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Lighty\\\\Model\\\\Document\\:\\:getLanguage\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Model/Document.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Lighty\\\\Model\\\\Document\\:\\:getSanitizedCode\\(\\) should return string but returns string\\|null\\.$#"
+			count: 1
+			path: src/Model/Document.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Lighty\\\\Model\\\\Document\\:\\:getTheme\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Model/Document.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Lighty\\\\Model\\\\Document\\:\\:setLanguage\\(\\) has parameter \\$language with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Model/Document.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Lighty\\\\Model\\\\Document\\:\\:setTheme\\(\\) has parameter \\$theme with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Model/Document.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Lighty\\\\Model\\\\Document\\:\\:toArray\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Model/Document.php
+
+		-
+			message: "#^Parameter \\#1 \\$pattern of function preg_replace expects array\\|string, mixed given\\.$#"
+			count: 1
+			path: src/Model/Document.php
+
+		-
+			message: "#^Parameter \\#2 \\$data of function hash expects string, string\\|false given\\.$#"
+			count: 1
+			path: src/Model/Document.php
+
+		-
+			message: "#^Property BaseCodeOy\\\\Lighty\\\\Model\\\\Document\\:\\:\\$language type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Model/Document.php
+
+		-
+			message: "#^Property BaseCodeOy\\\\Lighty\\\\Model\\\\Document\\:\\:\\$theme type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Model/Document.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Lighty\\\\Model\\\\Line\\:\\:__construct\\(\\) has parameter \\$modifiers with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Model/Line.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Lighty\\\\Model\\\\Line\\:\\:getModifiedNumber\\(\\) should return int but returns int\\|null\\.$#"
+			count: 1
+			path: src/Model/Line.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Lighty\\\\Model\\\\Line\\:\\:getModifiers\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Model/Line.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Lighty\\\\Model\\\\Line\\:\\:getSanitizedContent\\(\\) should return string but returns string\\|null\\.$#"
+			count: 1
+			path: src/Model/Line.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Lighty\\\\Model\\\\Line\\:\\:setModifiers\\(\\) has parameter \\$modifiers with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Model/Line.php
+
+		-
+			message: "#^Property BaseCodeOy\\\\Lighty\\\\Model\\\\Line\\:\\:\\$content \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Model/Line.php
+
+		-
+			message: "#^Property BaseCodeOy\\\\Lighty\\\\Model\\\\Line\\:\\:\\$modifiers \\(array\\) does not accept array\\|null\\.$#"
+			count: 1
+			path: src/Model/Line.php
+
+		-
+			message: "#^Cannot call method getContent\\(\\) on BaseCodeOy\\\\Lighty\\\\Model\\\\Line\\|null\\.$#"
+			count: 1
+			path: src/Parser/DocumentParser.php
+
+		-
+			message: "#^Parameter \\#1 \\$array of static method Illuminate\\\\Support\\\\Arr\\:\\:get\\(\\) expects array\\|ArrayAccess, mixed given\\.$#"
+			count: 9
+			path: src/Parser/DocumentParser.php
+
+		-
+			message: "#^Parameter \\#1 \\$array of static method Illuminate\\\\Support\\\\Arr\\:\\:has\\(\\) expects array\\|ArrayAccess, mixed given\\.$#"
+			count: 2
+			path: src/Parser/DocumentParser.php
+
+		-
+			message: "#^Parameter \\#1 \\$callback of method Illuminate\\\\Support\\\\Collection\\<\\(int\\|string\\),mixed\\>\\:\\:map\\(\\) expects callable\\(mixed, int\\|string\\)\\: object, Closure\\(string\\)\\: object given\\.$#"
+			count: 1
+			path: src/Parser/DocumentParser.php
+
+		-
+			message: "#^Parameter \\#1 \\$language of method BaseCodeOy\\\\Lighty\\\\Model\\\\Document\\:\\:setLanguage\\(\\) expects array\\|string, mixed given\\.$#"
+			count: 2
+			path: src/Parser/DocumentParser.php
+
+		-
+			message: "#^Parameter \\#1 \\$pattern of function preg_match expects string, mixed given\\.$#"
+			count: 1
+			path: src/Parser/DocumentParser.php
+
+		-
+			message: "#^Parameter \\#1 \\$theme of method BaseCodeOy\\\\Lighty\\\\Model\\\\Document\\:\\:setTheme\\(\\) expects array\\|string, mixed given\\.$#"
+			count: 2
+			path: src/Parser/DocumentParser.php
+
+		-
+			message: "#^Parameter \\#1 \\$value of function collect expects Illuminate\\\\Contracts\\\\Support\\\\Arrayable\\<\\(int\\|string\\), mixed\\>\\|iterable\\<\\(int\\|string\\), mixed\\>\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Parser/DocumentParser.php
+
+		-
+			message: "#^Parameter \\#3 \\$subject of function str_replace expects array\\|string, string\\|null given\\.$#"
+			count: 1
+			path: src/Parser/DocumentParser.php
+
+		-
+			message: "#^Unable to resolve the template type TKey in call to function collect$#"
+			count: 1
+			path: src/Parser/DocumentParser.php
+
+		-
+			message: "#^Unable to resolve the template type TValue in call to function collect$#"
+			count: 1
+			path: src/Parser/DocumentParser.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Lighty\\\\Repository\\\\LineRepository\\:\\:__construct\\(\\) has parameter \\$lines with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Repository/LineRepository.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Lighty\\\\Repository\\\\LineRepository\\:\\:toArray\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Repository/LineRepository.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Lighty\\\\Shiki\\\\CallShiki\\:\\:execute\\(\\) has parameter \\$arguments with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Shiki/CallShiki.php
+
+		-
+			message: "#^Parameter \\#1 \\$command of method Illuminate\\\\Process\\\\PendingProcess\\:\\:run\\(\\) expects array\\<string\\>\\|string\\|null, array\\<int, string\\|null\\> given\\.$#"
+			count: 1
+			path: src/Shiki/CallShiki.php
+
+		-
+			message: "#^Parameter \\#2 \\$code of class RuntimeException constructor expects int, int\\|null given\\.$#"
+			count: 1
+			path: src/Shiki/CallShiki.php
+
+		-
+			message: "#^Cannot access offset 'id' on mixed\\.$#"
+			count: 1
+			path: src/Shiki/ListLanguages.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Lighty\\\\Shiki\\\\ListLanguages\\:\\:execute\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Shiki/ListLanguages.php
+
+		-
+			message: "#^Parameter \\#2 \\$array of function array_map expects array, mixed given\\.$#"
+			count: 1
+			path: src/Shiki/ListLanguages.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Lighty\\\\Shiki\\\\ListThemes\\:\\:execute\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Shiki/ListThemes.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Lighty\\\\Shiki\\\\ListThemes\\:\\:execute\\(\\) should return array but returns mixed\\.$#"
+			count: 1
+			path: src/Shiki/ListThemes.php
+
+		-
+			message: "#^Method Tests\\\\Application\\\\AnalysisTest\\:\\:getIgnored\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: tests/Application/AnalysisTest.php
+
+		-
+			message: "#^Function fixture\\(\\) should return string but returns string\\|false\\.$#"
+			count: 1
+			path: tests/Pest.php
+
+		-
+			message: "#^Function fixtureArray\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: tests/Pest.php
+
+		-
+			message: "#^Function fixtureArray\\(\\) should return array but returns mixed\\.$#"
+			count: 1
+			path: tests/Pest.php
+
+		-
+			message: "#^Parameter \\#1 \\$json of function json_decode expects string, string\\|false given\\.$#"
+			count: 1
+			path: tests/Pest.php
+
+		-
+			message: "#^Cannot call method getModifiers\\(\\) on BaseCodeOy\\\\Lighty\\\\Model\\\\Line\\|null\\.$#"
+			count: 2
+			path: tests/Unit/Annotation/AddAnnotationTest.php
+
+		-
+			message: "#^Parameter \\#1 \\$line of method BaseCodeOy\\\\Lighty\\\\Annotation\\\\AddAnnotation\\:\\:parse\\(\\) expects BaseCodeOy\\\\Lighty\\\\Model\\\\Line, BaseCodeOy\\\\Lighty\\\\Model\\\\Line\\|null given\\.$#"
+			count: 2
+			path: tests/Unit/Annotation/AddAnnotationTest.php
+
+		-
+			message: "#^Cannot call method getModifiers\\(\\) on BaseCodeOy\\\\Lighty\\\\Model\\\\Line\\|null\\.$#"
+			count: 2
+			path: tests/Unit/Annotation/CollapseAnnotationTest.php
+
+		-
+			message: "#^Parameter \\#1 \\$line of method BaseCodeOy\\\\Lighty\\\\Annotation\\\\CollapseAnnotation\\:\\:parse\\(\\) expects BaseCodeOy\\\\Lighty\\\\Model\\\\Line, BaseCodeOy\\\\Lighty\\\\Model\\\\Line\\|null given\\.$#"
+			count: 2
+			path: tests/Unit/Annotation/CollapseAnnotationTest.php
+
+		-
+			message: "#^Cannot call method getModifiers\\(\\) on BaseCodeOy\\\\Lighty\\\\Model\\\\Line\\|null\\.$#"
+			count: 2
+			path: tests/Unit/Annotation/ColorifyAnnotationTest.php
+
+		-
+			message: "#^Parameter \\#1 \\$line of method BaseCodeOy\\\\Lighty\\\\Annotation\\\\ColorifyAnnotation\\:\\:parse\\(\\) expects BaseCodeOy\\\\Lighty\\\\Model\\\\Line, BaseCodeOy\\\\Lighty\\\\Model\\\\Line\\|null given\\.$#"
+			count: 2
+			path: tests/Unit/Annotation/ColorifyAnnotationTest.php
+
+		-
+			message: "#^Cannot call method getModifiers\\(\\) on BaseCodeOy\\\\Lighty\\\\Model\\\\Line\\|null\\.$#"
+			count: 2
+			path: tests/Unit/Annotation/DeleteAnnotationTest.php
+
+		-
+			message: "#^Parameter \\#1 \\$line of method BaseCodeOy\\\\Lighty\\\\Annotation\\\\DeleteAnnotation\\:\\:parse\\(\\) expects BaseCodeOy\\\\Lighty\\\\Model\\\\Line, BaseCodeOy\\\\Lighty\\\\Model\\\\Line\\|null given\\.$#"
+			count: 2
+			path: tests/Unit/Annotation/DeleteAnnotationTest.php
+
+		-
+			message: "#^Cannot call method getModifiers\\(\\) on BaseCodeOy\\\\Lighty\\\\Model\\\\Line\\|null\\.$#"
+			count: 2
+			path: tests/Unit/Annotation/FocusAnnotationTest.php
+
+		-
+			message: "#^Parameter \\#1 \\$line of method BaseCodeOy\\\\Lighty\\\\Annotation\\\\FocusAnnotation\\:\\:parse\\(\\) expects BaseCodeOy\\\\Lighty\\\\Model\\\\Line, BaseCodeOy\\\\Lighty\\\\Model\\\\Line\\|null given\\.$#"
+			count: 2
+			path: tests/Unit/Annotation/FocusAnnotationTest.php
+
+		-
+			message: "#^Cannot call method getModifiers\\(\\) on BaseCodeOy\\\\Lighty\\\\Model\\\\Line\\|null\\.$#"
+			count: 2
+			path: tests/Unit/Annotation/HighlightAnnotationTest.php
+
+		-
+			message: "#^Parameter \\#1 \\$line of method BaseCodeOy\\\\Lighty\\\\Annotation\\\\HighlightAnnotation\\:\\:parse\\(\\) expects BaseCodeOy\\\\Lighty\\\\Model\\\\Line, BaseCodeOy\\\\Lighty\\\\Model\\\\Line\\|null given\\.$#"
+			count: 2
+			path: tests/Unit/Annotation/HighlightAnnotationTest.php
+
+		-
+			message: "#^Cannot call method getModifiedNumber\\(\\) on BaseCodeOy\\\\Lighty\\\\Model\\\\Line\\|null\\.$#"
+			count: 2
+			path: tests/Unit/Annotation/LineNumberAnnotationTest.php
+
+		-
+			message: "#^Cannot call method getModifiers\\(\\) on BaseCodeOy\\\\Lighty\\\\Model\\\\Line\\|null\\.$#"
+			count: 2
+			path: tests/Unit/Annotation/LineNumberAnnotationTest.php
+
+		-
+			message: "#^Parameter \\#1 \\$line of method BaseCodeOy\\\\Lighty\\\\Annotation\\\\LineNumberAnnotation\\:\\:parse\\(\\) expects BaseCodeOy\\\\Lighty\\\\Model\\\\Line, BaseCodeOy\\\\Lighty\\\\Model\\\\Line\\|null given\\.$#"
+			count: 2
+			path: tests/Unit/Annotation/LineNumberAnnotationTest.php
+
+		-
+			message: "#^Cannot call method getModifiers\\(\\) on BaseCodeOy\\\\Lighty\\\\Model\\\\Line\\|null\\.$#"
+			count: 2
+			path: tests/Unit/Annotation/LinkifyAnnotationTest.php
+
+		-
+			message: "#^Parameter \\#1 \\$line of method BaseCodeOy\\\\Lighty\\\\Annotation\\\\LinkifyAnnotation\\:\\:parse\\(\\) expects BaseCodeOy\\\\Lighty\\\\Model\\\\Line, BaseCodeOy\\\\Lighty\\\\Model\\\\Line\\|null given\\.$#"
+			count: 2
+			path: tests/Unit/Annotation/LinkifyAnnotationTest.php

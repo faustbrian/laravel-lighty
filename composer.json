@@ -1,0 +1,71 @@
+{
+    "name": "basecodeoy/lighty",
+    "description": "A beautiful syntax highlighter for Laravel, powered by Shiki.",
+    "license": "MIT",
+    "type": "library",
+    "keywords": [
+        "BaseCode Oy",
+        "laravel",
+        "lighty"
+    ],
+    "authors": [
+        {
+            "name": "Brian Faust",
+            "email": "hello@basecode.sh",
+            "role": "Developer"
+        }
+    ],
+    "homepage": "https://github.com/basecodeoy/lighty",
+    "support": {
+        "issues": "https://github.com/basecodeoy/lighty/issues",
+        "source": "https://github.com/basecodeoy/lighty",
+        "security": "https://github.com/basecodeoy/lighty/blob/main/.github/SECURITY.md"
+    },
+    "require": {
+        "php": "^8.3",
+        "ext-mbstring": "*",
+        "ext-zip": "*",
+        "basecodeoy/crate": "^1.0.0",
+        "guzzlehttp/guzzle": "^7.9.2",
+        "illuminate/contracts": "^11.0",
+        "league/commonmark": "^2.6.0",
+        "spatie/laravel-data": "^4.11.1"
+    },
+    "require-dev": {
+        "basecodeoy/standards": "^1.1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "BaseCodeOy\\Lighty\\": "src",
+            "BaseCodeOy\\Lighty\\Database\\Factories\\": "database/factories"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "ergebnis/composer-normalize": true,
+            "infection/extension-installer": true,
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        },
+        "audit": {
+            "abandoned": "report"
+        },
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "aliases": {
+                "Lighty": "BaseCodeOy\\Lighty\\Facades\\Lighty"
+            },
+            "providers": [
+                "BaseCodeOy\\Lighty\\ServiceProvider"
+            ]
+        }
+    }
+}

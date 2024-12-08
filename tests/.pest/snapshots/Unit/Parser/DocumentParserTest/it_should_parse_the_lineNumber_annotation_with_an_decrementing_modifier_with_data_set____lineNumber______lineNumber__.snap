@@ -1,0 +1,99 @@
+{
+    "code": "\/\/ This is a long bit of text, hard to reindex the middle. [lighty lineNumber(-5):5,5]\nreturn <<<EOT\nspring sunshine\nthe smell of waters\nfrom the stars\n\ndeep winter\nthe smell of a crow\nfrom the stars\n\nbeach to school\nthe smell of water\nin the sky\nEOT;[lighty highlight:-8,3]",
+    "codeSanitized": "\/\/ This is a long bit of text, hard to reindex the middle. \nreturn <<<EOT\nspring sunshine\nthe smell of waters\nfrom the stars\n\ndeep winter\nthe smell of a crow\nfrom the stars\n\nbeach to school\nthe smell of water\nin the sky\nEOT;",
+    "lines": {
+        "1": {
+            "originalNumber": 1,
+            "modifiedNumber": 1,
+            "content": "\/\/ This is a long bit of text, hard to reindex the middle. [lighty lineNumber(-5):5,5]",
+            "modifiers": []
+        },
+        "2": {
+            "originalNumber": 2,
+            "modifiedNumber": 2,
+            "content": "return <<<EOT",
+            "modifiers": []
+        },
+        "3": {
+            "originalNumber": 3,
+            "modifiedNumber": 3,
+            "content": "spring sunshine",
+            "modifiers": []
+        },
+        "4": {
+            "originalNumber": 4,
+            "modifiedNumber": 4,
+            "content": "the smell of waters",
+            "modifiers": []
+        },
+        "5": {
+            "originalNumber": 5,
+            "modifiedNumber": 5,
+            "content": "from the stars",
+            "modifiers": []
+        },
+        "6": {
+            "originalNumber": 6,
+            "modifiedNumber": 1,
+            "content": "",
+            "modifiers": []
+        },
+        "7": {
+            "originalNumber": 7,
+            "modifiedNumber": 2,
+            "content": "deep winter",
+            "modifiers": {
+                "highlight": "highlight"
+            }
+        },
+        "8": {
+            "originalNumber": 8,
+            "modifiedNumber": 3,
+            "content": "the smell of a crow",
+            "modifiers": {
+                "highlight": "highlight"
+            }
+        },
+        "9": {
+            "originalNumber": 9,
+            "modifiedNumber": 4,
+            "content": "from the stars",
+            "modifiers": {
+                "highlight": "highlight"
+            }
+        },
+        "10": {
+            "originalNumber": 10,
+            "modifiedNumber": 5,
+            "content": "",
+            "modifiers": []
+        },
+        "11": {
+            "originalNumber": 11,
+            "modifiedNumber": 11,
+            "content": "beach to school",
+            "modifiers": []
+        },
+        "12": {
+            "originalNumber": 12,
+            "modifiedNumber": 12,
+            "content": "the smell of water",
+            "modifiers": []
+        },
+        "13": {
+            "originalNumber": 13,
+            "modifiedNumber": 13,
+            "content": "in the sky",
+            "modifiers": []
+        },
+        "14": {
+            "originalNumber": 14,
+            "modifiedNumber": 14,
+            "content": "EOT;[lighty highlight:-8,3]",
+            "modifiers": []
+        }
+    },
+    "showDiffIndicators": true,
+    "showDiffIndicatorsInPlaceOfLineNumbers": true,
+    "showLineNumbers": true
+}

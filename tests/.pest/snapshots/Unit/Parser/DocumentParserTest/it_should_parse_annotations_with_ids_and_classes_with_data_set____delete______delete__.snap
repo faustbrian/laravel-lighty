@@ -1,0 +1,72 @@
+{
+    "code": "return [\n    'extensions' => [\n        \/\/ Add attributes straight from markdown.\n        AttributesExtension::class,\n        \/\/ Add Lighty syntax highlighting.[lighty delete .animate-pulse]\n        LightyExtension::class,[lighty delete .font-bold .italic .animate-pulse #pulse]\n    ]\n]",
+    "codeSanitized": "return [\n    'extensions' => [\n        \/\/ Add attributes straight from markdown.\n        AttributesExtension::class,\n        \/\/ Add Lighty syntax highlighting.\n        LightyExtension::class,\n    ]\n]",
+    "lines": {
+        "1": {
+            "originalNumber": 1,
+            "modifiedNumber": 1,
+            "content": "return [",
+            "modifiers": []
+        },
+        "2": {
+            "originalNumber": 2,
+            "modifiedNumber": 2,
+            "content": "    'extensions' => [",
+            "modifiers": []
+        },
+        "3": {
+            "originalNumber": 3,
+            "modifiedNumber": 3,
+            "content": "        \/\/ Add attributes straight from markdown.",
+            "modifiers": []
+        },
+        "4": {
+            "originalNumber": 4,
+            "modifiedNumber": 4,
+            "content": "        AttributesExtension::class,",
+            "modifiers": []
+        },
+        "5": {
+            "originalNumber": 5,
+            "modifiedNumber": 5,
+            "content": "        \/\/ Add Lighty syntax highlighting.[lighty delete .animate-pulse]",
+            "modifiers": {
+                "delete": "delete",
+                "class": [
+                    "animate-pulse"
+                ]
+            }
+        },
+        "6": {
+            "originalNumber": 6,
+            "modifiedNumber": 6,
+            "content": "        LightyExtension::class,[lighty delete .font-bold .italic .animate-pulse #pulse]",
+            "modifiers": {
+                "delete": "delete",
+                "class": [
+                    "font-bold",
+                    "italic",
+                    "animate-pulse"
+                ],
+                "id": [
+                    "pulse"
+                ]
+            }
+        },
+        "7": {
+            "originalNumber": 7,
+            "modifiedNumber": 7,
+            "content": "    ]",
+            "modifiers": []
+        },
+        "8": {
+            "originalNumber": 8,
+            "modifiedNumber": 8,
+            "content": "]",
+            "modifiers": []
+        }
+    },
+    "showDiffIndicators": true,
+    "showDiffIndicatorsInPlaceOfLineNumbers": true,
+    "showLineNumbers": true
+}
