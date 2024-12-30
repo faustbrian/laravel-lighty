@@ -45,7 +45,7 @@ jobs:
               run: "composer validate --ansi --strict"
 
             - name: "Determine composer cache directory"
-              uses: "basecodeoy/.github/actions/composer/determine-cache-directory@1.0.1"
+              uses: "basecodeoy/.github/actions/composer/determine-cache-directory@1.0.2"
 
             - name: "Cache dependencies installed with composer"
               uses: "actions/cache@v4.2.0"
@@ -55,12 +55,12 @@ jobs:
                   restore-keys: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-"
 
             - name: "Install ${{ matrix.dependencies }} dependencies with composer"
-              uses: "basecodeoy/.github/actions/composer/install@1.0.1"
+              uses: "basecodeoy/.github/actions/composer/install@1.0.2"
               with:
                   dependencies: "${{ matrix.dependencies }}"
 
             - name: "Install ${{ matrix.dependencies }} dependencies with npm"
-              uses: "basecodeoy/.github/actions/npm/install@1.0.1"
+              uses: "basecodeoy/.github/actions/npm/install@1.0.2"
 
             - name: "Collect code coverage with PCOV and pestphp/pest"
               run: "vendor/bin/pest --parallel --coverage-clover=.build/phpunit/logs/clover.xml"
@@ -111,7 +111,7 @@ jobs:
               run: "composer validate --ansi --strict"
 
             - name: "Determine composer cache directory"
-              uses: "basecodeoy/.github/actions/composer/determine-cache-directory@1.0.1"
+              uses: "basecodeoy/.github/actions/composer/determine-cache-directory@1.0.2"
 
             - name: "Cache dependencies installed with composer"
               uses: "actions/cache@v4.2.0"
@@ -121,12 +121,12 @@ jobs:
                   restore-keys: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-"
 
             - name: "Install ${{ matrix.dependencies }} dependencies with composer"
-              uses: "basecodeoy/.github/actions/composer/install@1.0.1"
+              uses: "basecodeoy/.github/actions/composer/install@1.0.2"
               with:
                   dependencies: "${{ matrix.dependencies }}"
 
             - name: "Install ${{ matrix.dependencies }} dependencies with npm"
-              uses: "basecodeoy/.github/actions/npm/install@1.0.1"
+              uses: "basecodeoy/.github/actions/npm/install@1.0.2"
 
             - name: "Run ergebnis/composer-normalize"
               run: "composer normalize --ansi --dry-run"
@@ -176,7 +176,7 @@ jobs:
               run: "composer validate --ansi --strict"
 
             - name: "Determine composer cache directory"
-              uses: "basecodeoy/.github/actions/composer/determine-cache-directory@1.0.1"
+              uses: "basecodeoy/.github/actions/composer/determine-cache-directory@1.0.2"
 
             - name: "Cache dependencies installed with composer"
               uses: "actions/cache@v4.2.0"
@@ -186,7 +186,7 @@ jobs:
                   restore-keys: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-"
 
             - name: "Install ${{ matrix.dependencies }} dependencies with composer"
-              uses: "basecodeoy/.github/actions/composer/install@1.0.1"
+              uses: "basecodeoy/.github/actions/composer/install@1.0.2"
               with:
                   dependencies: "${{ matrix.dependencies }}"
 
@@ -229,10 +229,10 @@ jobs:
               run: "composer validate --ansi --strict"
 
             - name: "Determine composer root version"
-              uses: "basecodeoy/.github/actions/composer/determine-root-version@1.0.1"
+              uses: "basecodeoy/.github/actions/composer/determine-root-version@1.0.2"
 
             - name: "Determine composer cache directory"
-              uses: "basecodeoy/.github/actions/composer/determine-cache-directory@1.0.1"
+              uses: "basecodeoy/.github/actions/composer/determine-cache-directory@1.0.2"
 
             - name: "Cache dependencies installed with composer"
               uses: "actions/cache@v4.2.0"
@@ -242,12 +242,12 @@ jobs:
                   restore-keys: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-"
 
             - name: "Install ${{ matrix.dependencies }} dependencies with composer"
-              uses: "basecodeoy/.github/actions/composer/install@1.0.1"
+              uses: "basecodeoy/.github/actions/composer/install@1.0.2"
               with:
                   dependencies: "${{ matrix.dependencies }}"
 
             - name: "Install ${{ matrix.dependencies }} dependencies with npm"
-              uses: "basecodeoy/.github/actions/npm/install@1.0.1"
+              uses: "basecodeoy/.github/actions/npm/install@1.0.2"
 
             - name: "Run mutation tests with PCOV and pestphp/pest"
               run: "./vendor/bin/pest --mutate --parallel --everything --covered-only"
@@ -285,7 +285,7 @@ jobs:
               run: "composer validate --ansi --strict"
 
             - name: "Determine composer cache directory"
-              uses: "basecodeoy/.github/actions/composer/determine-cache-directory@1.0.1"
+              uses: "basecodeoy/.github/actions/composer/determine-cache-directory@1.0.2"
 
             - name: "Cache dependencies installed with composer"
               uses: "actions/cache@v4.2.0"
@@ -295,7 +295,7 @@ jobs:
                   restore-keys: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-"
 
             - name: "Install ${{ matrix.dependencies }} dependencies with composer"
-              uses: "basecodeoy/.github/actions/composer/install@1.0.1"
+              uses: "basecodeoy/.github/actions/composer/install@1.0.2"
               with:
                   dependencies: "${{ matrix.dependencies }}"
 
@@ -344,7 +344,7 @@ jobs:
               run: "composer validate --ansi --strict"
 
             - name: "Determine composer cache directory"
-              uses: "basecodeoy/.github/actions/composer/determine-cache-directory@1.0.1"
+              uses: "basecodeoy/.github/actions/composer/determine-cache-directory@1.0.2"
 
             - name: "Cache dependencies installed with composer"
               uses: "actions/cache@v4.2.0"
@@ -354,7 +354,7 @@ jobs:
                   restore-keys: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-"
 
             - name: "Install ${{ matrix.dependencies }} dependencies with composer"
-              uses: "basecodeoy/.github/actions/composer/install@1.0.1"
+              uses: "basecodeoy/.github/actions/composer/install@1.0.2"
               with:
                   dependencies: "${{ matrix.dependencies }}"
 
@@ -394,7 +394,7 @@ jobs:
               run: "composer validate --ansi --strict"
 
             - name: "Determine composer cache directory"
-              uses: "basecodeoy/.github/actions/composer/determine-cache-directory@1.0.1"
+              uses: "basecodeoy/.github/actions/composer/determine-cache-directory@1.0.2"
 
             - name: "Cache dependencies installed with composer"
               uses: "actions/cache@v4.2.0"
@@ -404,7 +404,7 @@ jobs:
                   restore-keys: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-"
 
             - name: "Install ${{ matrix.dependencies }} dependencies with composer"
-              uses: "basecodeoy/.github/actions/composer/install@1.0.1"
+              uses: "basecodeoy/.github/actions/composer/install@1.0.2"
               with:
                   dependencies: "${{ matrix.dependencies }}"
 
@@ -450,7 +450,7 @@ jobs:
               run: "composer validate --ansi --strict"
 
             - name: "Determine composer cache directory"
-              uses: "basecodeoy/.github/actions/composer/determine-cache-directory@1.0.1"
+              uses: "basecodeoy/.github/actions/composer/determine-cache-directory@1.0.2"
 
             - name: "Cache dependencies installed with composer"
               uses: "actions/cache@v4.2.0"
@@ -464,12 +464,12 @@ jobs:
               run: "composer config platform.php --ansi --unset"
 
             - name: "Install ${{ matrix.dependencies }} dependencies with composer"
-              uses: "basecodeoy/.github/actions/composer/install@1.0.1"
+              uses: "basecodeoy/.github/actions/composer/install@1.0.2"
               with:
                   dependencies: "${{ matrix.dependencies }}"
 
             - name: "Install ${{ matrix.dependencies }} dependencies with npm"
-              uses: "basecodeoy/.github/actions/npm/install@1.0.1"
+              uses: "basecodeoy/.github/actions/npm/install@1.0.2"
 
             - name: "Run unit tests with pestphp/pest"
               run: "vendor/bin/pest --parallel"
